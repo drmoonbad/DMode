@@ -1,0 +1,14 @@
+D-Mode is a single player mod that inserts a bunch of new RPG elements into Terraria:
+- A Skill System for tools, weapons and armor.
+- An Upgrade System for tools, weapons and armor.
+- An Infusion System for weapons. They imbue passive effects.
+
+The current version does not work properly on Multiplayer just yet.
+The mod has been designed to be 100% functional only in single player mode.
+
+Do not forget to join the mod's Discord Server, 
+there you can report bugs, weird interactions and
+incompatibilities.
+
+To join, just use the link: https://discord.gg/yTZ6fRd
+Or click on the mod's page down below.

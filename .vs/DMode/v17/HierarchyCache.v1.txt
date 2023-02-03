@@ -1,0 +1,327 @@
+﻿++Solução 'DMode' ‎(1 de 1 projeto)
+i:{00000000-0000-0000-0000-000000000000}:DMode.sln
+++DMode
+i:{00000000-0000-0000-0000-000000000000}:DMode
+++Dependências
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:>1124
+++Properties
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\properties\
+++Buffs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\
+++ArcaneFlames.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\arcaneflames.cs
+++ArcaneFlames.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\arcaneflames.png
+++BrokenBones.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\brokenbones.cs
+++BrokenBones.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\brokenbones.png
+++BrokenGuard.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\brokenguard.cs
+++BrokenGuard.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\brokenguard.png
+++BrokenGuardBonus.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\brokenguardbonus.cs
+++BrokenGuardBonus.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\brokenguardbonus.png
+++BuffTemplate.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\bufftemplate.png
+++CounterStrike.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\counterstrike.cs
+++CounterStrike.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\counterstrike.png
+++Cruelty.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\cruelty.cs
+++Cruelty.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\cruelty.png
+++DeathsGrasp.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\deathsgrasp.cs
+++DeathsGrasp.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\deathsgrasp.png
+++DebuffTemplate.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\debufftemplate.png
+++DMode.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\dmode.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dmode.cs
+++DMode.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\dmode.png
+++Fatigue.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\fatigue.cs
+++Fatigue.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\fatigue.png
+++LevelBuff.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\levelbuff.png
+++LevelNerf.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\levelnerf.png
+++OverwhelmingWill.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\overwhelmingwill.cs
+++OverwhelmingWill.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\overwhelmingwill.png
+++Pain.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\pain.cs
+++Pain.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\pain.png
+++Sacrifice.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\sacrifice.cs
+++Sacrifice.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\sacrifice.png
+++ShadowAppendixBuff.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\shadowappendixbuff.cs
+++ShadowAppendixBuff.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\shadowappendixbuff.png
+++ShadowAppendixDebuff.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\shadowappendixdebuff.cs
+++ShadowAppendixDebuff.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\shadowappendixdebuff.png
+++ShadowPower.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\shadowpower.cs
+++ShadowPower.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\buffs\shadowpower.png
+++Dusts
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dusts\
+++Items
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\
+++AmberKey.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\amberkey.cs
+++AmberKey.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\amberkey.png
+++BigGreenOrb.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\biggreenorb.cs
+++BigGreenOrb.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\biggreenorb.png
+++BigRedOrb.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\bigredorb.cs
+++BigRedOrb.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\bigredorb.png
+++DestinyBox.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\destinybox.cs
+++DestinyBox.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\destinybox.png
+++DexterityInfusionGem.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\dexterityinfusiongem.png
+++DexterityPowerCrystal.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\dexteritypowercrystal.png
+++DHeart.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\dheart.cs
+++DHeart.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\dheart.png
+++GreenOrb.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\greenorb.cs
+++GreenOrb.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\greenorb.png
+++InfusionGems.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\infusiongems.cs
+++MindInfusionGem.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\mindinfusiongem.png
+++MindPowerCrystal.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\mindpowercrystal.png
+++PowerCrystals.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\powercrystals.cs
+++RedOrb.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\redorb.cs
+++RedOrb.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\redorb.png
+++RingOfConvergence.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\ringofconvergence.cs
+++RingOfConvergence.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\ringofconvergence.png
+++ShadowOrb.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\shadoworb.cs
+++ShadowOrb.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\shadoworb.png
+++SoulBooster.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\soulbooster.cs
+++SoulBooster.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\soulbooster.png
+++SpiritInfusionGem.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\spiritinfusiongem.png
+++SpiritPowerCrystal.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\spiritpowercrystal.png
+++StrengthInfusionGem.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\strengthinfusiongem.png
+++StrengthPowerCrystal.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\strengthpowercrystal.png
+++SuperiorUpgradeGem.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\superiorupgradegem.cs
+++SuperiorUpgradeGem.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\superiorupgradegem.png
+++UnHeart.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\unheart.cs
+++UnHeart.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\unheart.png
+++UpgradeGem.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\upgradegem.cs
+++UpgradeGem.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\items\upgradegem.png
+++NPCs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\npcs\
+++Projectiles
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\projectiles\
+++build.txt
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\build.txt
+++description.txt
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\description.txt
+++DModeNPC.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dmodenpc.cs
+++DModePlayer.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dmodeplayer.cs
+++DModeProjectile.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dmodeprojectile.cs
+++DModeTile.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dmodetile.cs
+++DModeWorld.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dmodeworld.cs
+++icon.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\icon.png
+++Infusion.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\infusion.cs
+++LICENSE.txt
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\license.txt
+++Quality.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\quality.cs
+++Skill.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\skill.cs
+++Util.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\util.cs
+++Analisadores
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:analisadores
+++Assemblies
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:assemblies
+++Estruturas
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:estruturas
+++Pacotes
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:pacotes
+++launchSettings.json
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\properties\launchsettings.json
+++arcaneDust.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dusts\arcanedust.cs
+++arcaneDust.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dusts\arcanedust.png
+++shadowDust.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dusts\shadowdust.cs
+++shadowDust.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\dusts\shadowdust.png
+++ShadowAppendix.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\npcs\shadowappendix.cs
+++ShadowAppendix.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\npcs\shadowappendix.png
+++PhantomStrike.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\projectiles\phantomstrike.cs
+++PhantomStrike.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\projectiles\phantomstrike.png
+++ShadowBullet.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\projectiles\shadowbullet.cs
+++ShadowBullet.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\projectiles\shadowbullet.png
+++Soul.cs
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\projectiles\soul.cs
+++Soul.png
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\projectiles\soul.png
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++tModLoader.CodeAssist
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\.nuget\packages\tmodloader.codeassist\0.1.5\analyzers\dotnet\cs\tmodloader.codeassist.dll
+++Basic.Reference.Assemblies.Net60
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\basic.reference.assemblies.net60\1.2.4\lib\netstandard2.0\basic.reference.assemblies.net60.dll
+++CsvHelper
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\csvhelper\2.0.0.0\csvhelper.dll
+++FNA
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\fna\1.0.0\fna.dll
+++Hjson
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\hjson\3.0.0\lib\netstandard1.3\hjson.dll
+++Humanizer
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\humanizer.core\2.2.0\lib\netstandard1.0\humanizer.dll
+++Ionic.Zip.Reduced
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\ionic.zip.reduced\1.9.1.8\ionic.zip.reduced.dll
+++log4net
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\log4net\2.0.8.0\log4net.dll
+++Microsoft.Bcl.AsyncInterfaces
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\microsoft.bcl.asyncinterfaces.dll
+++Microsoft.Build.Locator
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.build.locator\1.4.1\lib\netcoreapp2.0\microsoft.build.locator.dll
+++Microsoft.CodeAnalysis
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.codeanalysis.common\4.2.0\lib\netcoreapp3.1\microsoft.codeanalysis.dll
+++Microsoft.CodeAnalysis.CSharp
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.codeanalysis.csharp\4.2.0\lib\netcoreapp3.1\microsoft.codeanalysis.csharp.dll
+++Microsoft.CodeAnalysis.CSharp.Workspaces
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.codeanalysis.csharp.workspaces\4.2.0\lib\netcoreapp3.1\microsoft.codeanalysis.csharp.workspaces.dll
+++Microsoft.CodeAnalysis.FlowAnalysis.Utilities
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.codeanalysis.flowanalysis.utilities\2.9.6\lib\netstandard1.3\microsoft.codeanalysis.flowanalysis.utilities.dll
+++Microsoft.CodeAnalysis.Workspaces
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.codeanalysis.workspaces.common\4.2.0\lib\netcoreapp3.1\microsoft.codeanalysis.workspaces.dll
+++Microsoft.CodeAnalysis.Workspaces.MSBuild
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.codeanalysis.workspaces.msbuild\4.2.0\lib\netcoreapp3.1\microsoft.codeanalysis.workspaces.msbuild.dll
+++Microsoft.Win32.SystemEvents
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\microsoft.win32.systemevents\6.0.0\lib\net6.0\microsoft.win32.systemevents.dll
+++Mono.Cecil
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\mono.cecil\0.11.4\lib\netstandard2.0\mono.cecil.dll
+++Mono.Cecil.Mdb
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\mono.cecil\0.11.4\lib\netstandard2.0\mono.cecil.mdb.dll
+++Mono.Cecil.Pdb
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\mono.cecil\0.11.4\lib\netstandard2.0\mono.cecil.pdb.dll
+++Mono.Cecil.Rocks
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\mono.cecil\0.11.4\lib\netstandard2.0\mono.cecil.rocks.dll
+++MonoMod.RuntimeDetour
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\monomod.runtimedetour\22.5.31.2\lib\net5.0\monomod.runtimedetour.dll
+++MonoMod.Utils
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\monomod.utils\22.5.31.2\lib\net5.0\monomod.utils.dll
+++MP3Sharp
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\mp3sharp\1.0.0.0\mp3sharp.dll
+++Newtonsoft.Json
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\newtonsoft.json\12.0.0.0\newtonsoft.json.dll
+++NVorbis
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\nvorbis\0.10.0.3\nvorbis.dll
+++RailSDK.Net
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\railsdk.net\1.0.0.0\railsdk.net.dll
+++ReLogic
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\relogic\1.0.0\relogic.dll
+++SixLabors.ImageSharp
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\sixlabors.imagesharp\1.0.3\lib\netcoreapp3.1\sixlabors.imagesharp.dll
+++Steamworks.NET
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\steamworks.net\20.1.0\lib\netstandard2.1\steamworks.net.dll
+++SteelSeriesEngineWrapper
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\steelseriesenginewrapper\1.0.0.0\steelseriesenginewrapper.dll
+++System.CodeDom
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.codedom\6.0.0\lib\net6.0\system.codedom.dll
+++System.Composition.AttributedModel
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.composition.attributedmodel\6.0.0\lib\net6.0\system.composition.attributedmodel.dll
+++System.Composition.Convention
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.composition.convention\6.0.0\lib\net6.0\system.composition.convention.dll
+++System.Composition.Hosting
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.composition.hosting\6.0.0\lib\net6.0\system.composition.hosting.dll
+++System.Composition.Runtime
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.composition.runtime\6.0.0\lib\net6.0\system.composition.runtime.dll
+++System.Composition.TypedParts
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.composition.typedparts\6.0.0\lib\net6.0\system.composition.typedparts.dll
+++System.Configuration.ConfigurationManager
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.configuration.configurationmanager\6.0.0\lib\net6.0\system.configuration.configurationmanager.dll
+++System.Diagnostics.PerformanceCounter
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.diagnostics.performancecounter\6.0.0\lib\net6.0\system.diagnostics.performancecounter.dll
+++System.Drawing.Common
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.drawing.common\6.0.0\lib\net6.0\system.drawing.common.dll
+++System.IO.Pipelines
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.io.pipelines\6.0.1\lib\net6.0\system.io.pipelines.dll
+++System.Reflection.MetadataLoadContext
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.reflection.metadataloadcontext\6.0.0\lib\net6.0\system.reflection.metadataloadcontext.dll
+++System.Security.Cryptography.ProtectedData
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.security.cryptography.protecteddata\6.0.0\lib\net6.0\system.security.cryptography.protecteddata.dll
+++System.Security.Permissions
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.security.permissions\6.0.0\lib\net6.0\system.security.permissions.dll
+++System.Windows.Extensions
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\system.windows.extensions\6.0.0\lib\net6.0\system.windows.extensions.dll
+++TerrariaHooks
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\terrariahooks\0.0.0.0\terrariahooks.dll
+++tModLoader
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\tmodloader.dll
+++tModPorter
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\tmodporter\1.0.0\tmodporter.dll
+++UtfUnknown
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\program files (x86)\steam\steamapps\common\tmodloader\libraries\utf.unknown\2.5.0\lib\netcoreapp3.0\utfunknown.dll
+++Microsoft.NETCore.App
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:c:\users\moonbad\documents\my games\terraria\tmodloader\modsources\dmode\microsoft.netcore.app
+++tModLoader.CodeAssist (0.1.5)
+i:{919a707b-79a9-4c00-a778-a4150f8d65f5}:>1182

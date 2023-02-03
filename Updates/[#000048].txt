@@ -1,0 +1,102 @@
+#[Quality of Life Update]
+- The mod will retain single player focus since multiplayer is not possible at the moment.
+
+#[Skill System Changes]
+- Ownership bullshit removed.
+- Level limit removed.
+- Experience now only increases on:
+- - Successiful enemy hits, for Weapons, Axes and Hammers.
+- - Block mining or destroying, for Pickaxes.
+- - Being hit my enemies, in the case of Armors.
+- New Max Experience Formula: 35 * (rarity + 1) * Level
+
+- Bonuses are applied accouring to the item type:
+- - Weapons, Axes and Hammers: 
+- - - Crit: +1% Chance per Level. 
+- - Pickaxes:
+- - - Increases the player's Mining Speed by 1% (Multiplicatively) per Level.
+- - Armors:
+- - - Life Max: +1 per Level.
+- - - Movement Speed: +0.35% per Level, per armor piece.
+
+- Tooltips show the indirect bonuses in light green.
+- There is a dust and sound animation when Skill increases.
+- The player can now level multiple weapons at the same time and projectiles will
+automatically know which weapon to give experience to. Makes summoners viable lul.
+- Fixed a bug where Goblin Tinkerer would screw you when reforging and erase the skill levels.
+
+#[Quality System Changes]
+- Quality can be increased with the Upgrade Gems:
+- - Weapons, Axes and Hammers:
+- - - Damage: +1% increase per Level.
+- - Pickaxes:
+- - - Increases the player's Mining Speed by 1% (Additively) per Level when held. 
+- - Armors:
+- - - Defense: +0.25 per Level.
+
+- Tooltips show the indirect bonuses in yellow.
+- There is a dust and sound animation when Quality increases.
+- Fixed a bug where Goblin Tinkerer would screw you when reforging and erase the quality levels.
+
+[Green Orbs]
+- Now named "Monstrous Experience".
+- Can no longer be used directly as a source of Skill Experience.
+- Sprite changed to a cool metalic look.
+- Maximum amount of dropped green orbs reduced by 1.
+
+[Gem of Upgrade]
+- Now named "Daedalus' Hammer".
+- Functionality changed: now only affects the first item of the hotbar.
+
+[Superior Gem of Upgrade]
+- Now named "Divine Hammer".
+- Functionality changed: now only affects the first item of the hotbar.
+- Number of upgrades per use changed from 25 to 10.
+
+[Red Orbs]
+- Now named "Monster Core".
+- Can no longer be used directly as a source of Infusion Experience.
+- Sprite Changed to a cool metalic look.
+
+[Souls]
+- Base Value increased to 3 from 1.
+- Value Linear Health Scaling increased to 100 from 80.
+- Value Exponential Health Scaling increased to 1.7 from 1.6.
+- TL;DL: Souls have more value, player will level up faster in the early game.
+- There is a dust and sound animation when the Player Level increases.
+- In Expert Mode, Max Experience needed no longer decreases with Destiny Points. 
+- In Expert Mode, Max Experience needed reduced by 10%.
+- In Master Mode, Max Experience needed is reduced by 20%.
+
+[Monsters]
+- Scaling in Casual mode increased from 4% to 5% per level.
+
+- Scaling per level in Expert mode:
+- - Defense: 5%
+- - Attack: 7.5%
+- - Health: 7.5%
+
+- Scaling per level in Master mode created:
+- - Defense: 5%
+- - Attack: 9%
+- - Health: 9%
+
+- Bosses have their bonuses reduced by 50%, 55% and 60% repectively for Casual, Expert and Master modes.
+- Hard mode reduces the scalings by 50%.
+- Defating the Moonlord also reduces the scalings by 50%. This allows for post-moonlord runs with other mods.
+- Monsters now have their custom names printed over them until they die.
+- Some NPCs still refuse to have their level changed. I'll try to fix it later.
+
+[Shadow Orbs]
+- Now named "Concentrated Evil".
+- No longer provides effects when in the player's inventory.
+
+[Tooltips]
+- Tooltips are now procedural and much more compatible with other mods, even other rpg mods.
+
+[Code]
+- Huge improvements on readability and maintence.
+- Also better cpu usage, but won't stop Calamity from destroying your pc.
+
+[Infusion System]
+- Removed from the mod. Will be reworked later.

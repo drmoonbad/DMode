@@ -1,0 +1,23 @@
+#[General Level Ups]
+- Leveling Up now emits white particles.
+
+#[New Items]
+- Chains of Abaddon: Deal and Receive 25% more damage.
+- Madness Sigil: Monsters drop more Cores, but no Experience.
+
+#[Permanent Consumable Upgrades - Master Mode]
+- Unbreakable Resolve: Style accumulates 20% faster.
+- Portable Soul Destiller: Souls are 20% more valuable.
+- Material Ancient Fear: Reduces Enemy Level by 1.
+
+#[Style - Master Mode]
+- Hitting an enemy with an attack or projectile increases the player's style
+points temporarely, to a maximum of 100 points.
+- A buff will display the current style rank from E to S.
+- Being hit by an enemy resets the style points to zero.
+- Player receives, per rank of style:
+- - +5% movement speed; 
+- - +20% jump speed;
+- - +5% damage bonus;
+- Because Master mode is way too hard with DMode, this should makes
+things easier for good players, and also more fun.
