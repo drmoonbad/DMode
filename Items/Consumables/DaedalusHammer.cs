@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using DMode.Items.Materials;
 using Microsoft.Xna.Framework;
@@ -7,8 +8,10 @@ using Terraria.ModLoader;
 
 namespace DMode.Items.Consumables
 {
-	public class DaedalusHammer : ModItem
-	{
+    public class DaedalusHammer : ModItem
+    {
+        private int level = 1;
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Daedalus' Hammer");
@@ -17,13 +20,14 @@ namespace DMode.Items.Consumables
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             TooltipLine tt1 = new TooltipLine(Mod, "DMode-Use-1", "Right click to consume");
-            TooltipLine tt2 = new TooltipLine(Mod, "DMode-Use-2", "Upgrades the first item in the hotbar to the next Quality Level");
+            TooltipLine tt2 = new TooltipLine(Mod, "DMode-Use-2",
+                $"Upgrades the first item in the hotbar by {Math.Pow(10, level - 1)} Quality Level(s)");
             tooltips.Add(tt1);
             tooltips.Add(tt2);
         }
 
         public override void SetDefaults()
-		{
+        {
             Item.rare = ItemRarityID.Green;
             Item.maxStack = 100;
             Item.width = 32;
@@ -137,7 +141,6 @@ namespace DMode.Items.Consumables
             recipe.AddTile(TileID.Furnaces);
             recipe.ReplaceResult(this, 7);
             recipe.Register();
-
         }
     }
 }

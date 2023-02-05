@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uYxFUVWhsCtdrwAQGUK4YmqAidZQBw4kGSI5zOV3jQo5wwECFDPzSAPgb/P/7xYOtUgpsu2A+TjFCZi+nsMWkQ==",
+  "dgSpecHash": "tVPl27Uyi0lSHKCakCmTd+e7PKusfA8OJVCph/ityN7A/uvbWsSjrp1GxK/XpgMpeJcidSPEVDoNyi+mnnM0PA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Moonbad\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\DMode\\DMode.csproj",
+  "projectFilePath": "/home/maciej/.local/share/Terraria/tModLoader/ModSources/DMode/DMode.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Moonbad\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+    "/home/maciej/.nuget/packages/tmodloader.codeassist/0.1.5/tmodloader.codeassist.0.1.5.nupkg.sha512"
   ],
   "logs": []
 }

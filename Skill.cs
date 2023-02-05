@@ -17,59 +17,43 @@ namespace DMode
 
         public override bool InstancePerEntity => true;
 
-        public static int RecalculateMaxExp(Item item) 
+        public static int RecalculateMaxExp(Item item)
         {
+            var increaseModifier = Util.IsCommonArmor(item) ? 1.3 : 2;
+            var baseModifier = Util.IsCommonArmor(item) ? 2 : 10;
+
             Skill skill = item.GetGlobalItem<Skill>();
 
             int rarity = item.rare < ItemRarityID.White ? 0 : item.rare;
-            return 35 * (rarity + 1) * skill.Level;
+            return baseModifier * (rarity + 1) * ((int)Math.Pow(skill.Level, increaseModifier) + baseModifier) *
+                   skill.Level;
         }
 
-        public static void EarnExp(Item item) 
+
+        public static void EarnExp(Item item, int amount = 1)
         {
             Skill skill = item.GetGlobalItem<Skill>();
-            if (skill != null)
+            if (skill == null)
+                return;
+            Player player = Main.LocalPlayer;
+
+            if (skill.Exp + amount < skill.ExpMax)
             {
-                if (skill.Exp < skill.ExpMax)
-                {
-                    skill.Exp++;
-                }
-                else
-                {
-                    skill.Level++;
-                    skill.Exp = 0;
-                    skill.ExpMax = RecalculateMaxExp(item);
-
-                    Player player = Main.LocalPlayer;
-
-                    Util.NewCombatText(player, new Color(88, 188, 35), "Skill Increased!", false, false, 1.25f, 90);
-                    Util.DefaultDustEffect(player.Center, 74, 5f);
-                    Util.NewSoundFX(SoundID.Item4, 0.3f, player.Center);
-                }
+                skill.Exp += amount;
             }
-        }
-
-        public static void EarnMultipleExp(Item item, int amount) 
-        {
-            Skill skill = item.GetGlobalItem<Skill>();
-            if (skill != null)
+            else
             {
-                if (skill.Exp + amount < skill.ExpMax)
-                {
-                    skill.Exp += amount;
-                }
-                else
-                {
-                    skill.Level++;
-                    skill.Exp += amount - skill.ExpMax;
-                    skill.ExpMax = RecalculateMaxExp(item);
+                var expLeft = amount - (skill.ExpMax - skill.Exp);
 
-                    Player player = Main.LocalPlayer;
+                skill.Level++;
+                skill.Exp = 0;
+                skill.ExpMax = RecalculateMaxExp(item);
 
-                    Util.NewCombatText(player, new Color(88, 188, 35), "Skill Increased!", false, false, 1.25f, 90);
-                    Util.DefaultDustEffect(player.Center, 74, 5f);
-                    Util.NewSoundFX(SoundID.Item4, 0.3f, player.Center);
-                }
+
+                Util.NewCombatText(player, new Color(88, 188, 35), "Skill level up!", false, false, 1.25f, 90);
+                Util.DefaultDustEffect(player.Center, 74, 5f);
+                Util.NewSoundFX(SoundID.Item4, 0.3f, player.Center);
+                EarnExp(item, expLeft);
             }
         }
 
@@ -91,12 +75,12 @@ namespace DMode
         {
             Level = tag.GetInt("Level");
             Exp = tag.GetInt("Exp");
-            ExpMax = tag.GetInt("ExpMax");
+            ExpMax = RecalculateMaxExp(item);
         }
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (Util.CanHaveAnySystem(item)) 
+            if (Util.CanHaveAnySystem(item))
             {
                 //Experience Tracking
                 string expText = "[Skill Exp]: " + Exp + " / " + ExpMax;
@@ -109,23 +93,25 @@ namespace DMode
                 itemName.Text = itemName.Text + " [c/8CE78C:(+" + Level + ")]";
             }
 
-            if (Util.IsCommonArmor(item)) 
+            if (Util.IsCommonArmor(item))
             {
                 //Defense Tooptip Modification
                 TooltipLine itemDefense = tooltips.Find(x => x.Name == "Defense" && x.Mod == "Terraria");
                 if (itemDefense != null)
                 {
                     itemDefense.Text = itemDefense.Text + " [c/8CE78C:(+" + CalculateLifeBonus(item) + " HP)]";
+                    tooltips.Add(new TooltipLine(Mod, "playerSpeed",
+                        $"[c/8CE78C:+{Math.Floor(0.35f * Level)}% Move speed]"));
                 }
             }
 
-            if (Util.IsCommonWeapon(item)) 
+            if (Util.IsCommonWeapon(item))
             {
                 //Crit Tooptip Modification
                 TooltipLine itemCrit = tooltips.Find(x => x.Name == "CritChance" && x.Mod == "Terraria");
                 if (itemCrit != null)
                 {
-                    itemCrit.Text = itemCrit.Text + " [c/8CE78C:(+" + (Level - 1).ToString() + "%)]";
+                    itemCrit.Text = itemCrit.Text + " [c/8CE78C:(+" + (Level) + "%)]";
                 }
             }
         }
@@ -134,36 +120,34 @@ namespace DMode
         {
             if (Util.IsCommonWeapon(item))
             {
-                crit += Level - 1;
+                crit += Level;
             }
         }
-        
+
         public override void OnHitNPC(Item item, Player player, NPC target, int damage, float knockBack, bool crit)
         {
             if (Util.IsCommonWeapon(item) && Util.IsValidSkillSystemTarget(target))
             {
-                EarnExp(item);
+                EarnExp(item, damage);
             }
         }
 
         public static int CalculateLifeBonus(Item item)
         {
-            if (Util.IsCommonArmor(item)) 
+            if (Util.IsCommonArmor(item))
             {
                 int Level = item.GetGlobalItem<Skill>().Level;
-                return Level - 1;
+                return Level;
             }
-            else 
-            {
-                return 0;
-            }
+
+            return 0;
         }
 
         public override void UpdateEquip(Item item, Player player)
         {
             player.statLifeMax2 += CalculateLifeBonus(item);
 
-            if (Util.IsCommonArmor(item)) 
+            if (Util.IsCommonArmor(item))
             {
                 player.moveSpeed += 0.0035f * Level;
             }

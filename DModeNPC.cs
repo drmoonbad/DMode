@@ -3,6 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using System;
+using DMode.Items.Consumables;
 using Terraria.DataStructures;
 using DMode.Items.Materials;
 
@@ -61,7 +62,7 @@ namespace DMode
 
         public override bool InstancePerEntity => true;
 
-        public void ApplyModifiers(NPC npc) 
+        public void ApplyModifiers(NPC npc)
         {
             hasLevel = false;
             level = 0;
@@ -201,9 +202,10 @@ namespace DMode
                 npc.lifeRegen -= 4;
                 npc.lifeRegenExpectedLossPerSecond = 2;
             }
+
             if (shadowParasite)
             {
-                shadowHost = false;     
+                shadowHost = false;
                 npc.lifeRegen += 4;
             }
         }
@@ -232,6 +234,7 @@ namespace DMode
                     Util.ChatMessage("You feel evil thoughts creeping on you...", Color.LightSeaGreen);
                 }
             }
+
             return true;
         }
 
@@ -240,12 +243,12 @@ namespace DMode
             //Madness Sigil
             Player player = Main.LocalPlayer;
             int redFactor, greenFactor;
-            if (player.GetModPlayer<DModePlayer>().MadnessSigil) 
+            if (player.GetModPlayer<DModePlayer>().MadnessSigil)
             {
                 redFactor = 2;
                 greenFactor = 0;
             }
-            else 
+            else
             {
                 redFactor = 1;
                 greenFactor = 1;
@@ -259,38 +262,54 @@ namespace DMode
                 {
                     if (npc.lifeMax >= 75)
                     {
-                        Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<MonsterCore>(), 1 * redFactor);
+                        Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<MonsterCore>(),
+                            1 * redFactor);
                     }
                 }
                 else
                 {
-                    Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<MonsterCore>(), 5 * redFactor);
+                    Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<MonsterCore>(),
+                        5 * redFactor);
                 }
 
                 //Green
-                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<MonstrousExperience>(), Util.GetRandomInt(1, 3) * greenFactor);
+                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<MonstrousExperience>(),
+                    Util.GetRandomInt(1, 3) * greenFactor * (int)Math.Max(Math.Floor(Math.Sqrt(npc.lifeMax) / 10), 1));
 
                 //Soul
-                int soul = Projectile.NewProjectile(npc.GetSource_FromAI(), npc.Center, Vector2.Zero, Mod.Find<ModProjectile>("Soul").Type, 0, 0);
+                int soul = Projectile.NewProjectile(npc.GetSource_FromAI(), npc.Center, Vector2.Zero,
+                    Mod.Find<ModProjectile>("Soul").Type, 0, 0);
                 Main.projectile[soul].GetGlobalProjectile<DModeProjectile>().SoulOwner = playerToLastHit;
-                Main.projectile[soul].ai[1] = Util.GetSoulValue(npc) * (1 + player.GetModPlayer<DModePlayer>().soulValueBonus);
+                Main.projectile[soul].ai[1] =
+                    Util.GetSoulValue(npc) * (1 + player.GetModPlayer<DModePlayer>().soulValueBonus);
             }
 
             //Destiny Box Drops
             if (npc.boss || (Util.CanBeVariant(npc, Mod) && npc.lifeMax >= 100 && Util.Chance(1)))
             {
-                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, Mod.Find<ModItem>("DestinyBox").Type, 1);
+                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<DestinyBox>(), 1);
             }
 
             //Variants
             int variantCount = 0;
-            if (shadowVariant) { variantCount++; }
-            if (bossVariant) { variantCount++; }
-            if (variantCount > 0) 
+            if (shadowVariant)
             {
-                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, Mod.Find<ModItem>("DestinyBox").Type, variantCount);
-                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<MonsterCore>(), 5 * variantCount * redFactor );
-                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<ConcentratedEvil>(), variantCount);
+                variantCount++;
+            }
+
+            if (bossVariant)
+            {
+                variantCount++;
+            }
+
+            if (variantCount > 0)
+            {
+                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, Mod.Find<ModItem>("DestinyBox").Type,
+                    variantCount);
+                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<MonsterCore>(),
+                    5 * variantCount * redFactor);
+                Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ModContent.ItemType<ConcentratedEvil>(),
+                    variantCount);
                 Item.NewItem(npc.GetSource_DropAsItem(), npc.Center, ItemID.Amber, variantCount);
             }
         }
@@ -299,14 +318,15 @@ namespace DMode
         {
             if (shadowVariant)
             {
-                if (npc.netID !=  Mod.Find<ModNPC>("ShadowAppendix").Type)
+                if (npc.netID != Mod.Find<ModNPC>("ShadowAppendix").Type)
                 {
                     drawColor = new Color(0, 0, 0, 204);
                 }
 
                 for (int i = 0; i < 3; i++)
                 {
-                    Dust.NewDust(new Vector2(npc.position.X - 4, npc.position.Y - 4), npc.width + 4, npc.height + 4, Mod.Find<ModDust>("shadowDust").Type);
+                    Dust.NewDust(new Vector2(npc.position.X - 4, npc.position.Y - 4), npc.width + 4, npc.height + 4,
+                        Mod.Find<ModDust>("shadowDust").Type);
                 }
             }
 
@@ -314,7 +334,8 @@ namespace DMode
             {
                 for (int i = 0; i < 2; i++)
                 {
-                    Dust.NewDust(new Vector2(npc.position.X - 4, npc.position.Y - 4), npc.width + 4, npc.height + 4, Mod.Find<ModDust>("arcaneDust").Type);
+                    Dust.NewDust(new Vector2(npc.position.X - 4, npc.position.Y - 4), npc.width + 4, npc.height + 4,
+                        Mod.Find<ModDust>("arcaneDust").Type);
                 }
             }
         }
@@ -349,7 +370,8 @@ namespace DMode
             if (shadowVariant && !hasSpawnedAppendix && npc.netID != Mod.Find<ModNPC>("ShadowAppendix").Type)
             {
                 hasSpawnedAppendix = true;
-                NPC.NewNPC(npc.GetSource_FromAI(), (int)(npc.position.X), (int)(npc.position.Y), Mod.Find<ModNPC>("ShadowAppendix").Type);
+                NPC.NewNPC(npc.GetSource_FromAI(), (int)(npc.position.X), (int)(npc.position.Y),
+                    Mod.Find<ModNPC>("ShadowAppendix").Type);
             }
         }
 
@@ -361,7 +383,8 @@ namespace DMode
             if (shadowVariant && !hasSpawnedAppendix && npc.netID != Mod.Find<ModNPC>("ShadowAppendix").Type)
             {
                 hasSpawnedAppendix = true;
-                NPC.NewNPC(npc.GetSource_FromAI(), (int)(npc.position.X), (int)(npc.position.Y), Mod.Find<ModNPC>("ShadowAppendix").Type);
+                NPC.NewNPC(npc.GetSource_FromAI(), (int)(npc.position.X), (int)(npc.position.Y),
+                    Mod.Find<ModNPC>("ShadowAppendix").Type);
             }
         }
     }
