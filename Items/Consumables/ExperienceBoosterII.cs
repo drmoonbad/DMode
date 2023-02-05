@@ -5,15 +5,15 @@ using System.Collections.Generic;
 
 namespace DMode.Items.Consumables
 {
-	public class ExperienceBoosterII : ModItem
-	{
+    public class ExperienceBoosterII : ModItem
+    {
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Experience Booster II");
         }
 
         public override void SetDefaults()
-		{
+        {
             Item.rare = ItemRarityID.Orange;
             Item.maxStack = 20;
             Item.width = 14;
@@ -23,7 +23,8 @@ namespace DMode.Items.Consumables
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             TooltipLine tt1 = new TooltipLine(Mod, "DMode-Use-1", "Right Click to consume");
-            TooltipLine tt2 = new TooltipLine(Mod, "DMode-Use-2", "Increases the Skill Experience of the first item in the hotbar by 300");
+            TooltipLine tt2 = new TooltipLine(Mod, "DMode-Use-2",
+                "Increases the Skill Experience of the first item in the hotbar by 300");
             tooltips.Add(tt1);
             tooltips.Add(tt2);
         }
@@ -36,7 +37,7 @@ namespace DMode.Items.Consumables
 
         public override void RightClick(Player player)
         {
-            Skill.EarnMultipleExp(player.inventory[0], 300);
+            Skill.EarnExp(player.inventory[0], 300);
         }
 
         public override void AddRecipes()

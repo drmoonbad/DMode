@@ -11,7 +11,6 @@ using DMode.Buffs.Style;
 
 namespace DMode
 {
-
     public class DModePlayer : ModPlayer
     {
         //Simple Buffs and Debuffs:
@@ -108,7 +107,7 @@ namespace DMode
             tag.Add("styleSpeedBonus", styleSpeedBonus);
             tag.Add("soulValueBonus", soulValueBonus);
         }
-        
+
         public override void LoadData(TagCompound tag)
         {
             GeneralLevel = tag.GetInt("GeneralLevel");
@@ -142,7 +141,7 @@ namespace DMode
             soulValueBonus = tag.GetFloat("soulValueBonus");
         }
 
-        public void FirstSpawn() 
+        public void FirstSpawn()
         {
             activeStyle = false;
             style = 0;
@@ -182,7 +181,7 @@ namespace DMode
             };
         }
 
-        public static int CalculateMaxSoulPoints(int level, double factor) 
+        public static int CalculateMaxSoulPoints(int level, double factor)
         {
             return (int)Math.Floor(8 * (1 - factor) * (12 + 0.75 * level) * (1 + 0.0075 * level));
         }
@@ -208,7 +207,7 @@ namespace DMode
             {
                 sourceUpdateClock++;
             }
-            else 
+            else
             {
                 for (int i = 0; i < Main.maxProjectiles; i++)
                 {
@@ -216,14 +215,13 @@ namespace DMode
 
                     if (proj.active && !proj.npcProj)
                     {
-                        proj.GetGlobalProjectile<DModeProjectile>().sourceInvID = Util.FindInvIDwithShoot(proj.type, Main.LocalPlayer);
+                        proj.GetGlobalProjectile<DModeProjectile>().sourceInvID =
+                            Util.FindInvIDwithShoot(proj.type, Main.LocalPlayer);
                     }
                 }
 
                 sourceUpdateClock = 0;
             }
-
-            
         }
 
         public override void PreUpdateBuffs()
@@ -293,7 +291,7 @@ namespace DMode
             }
 
             //Max Experience decreases by 10% in Expert, 20% in Master.
-            if (Main.masterMode) 
+            if (Main.masterMode)
             {
                 if (SoulPoints >= MaxSoulPoints && GeneralLevel < maxGeneralLevel)
                 {
@@ -301,7 +299,8 @@ namespace DMode
                     SoulPoints -= MaxSoulPoints;
                     MaxSoulPoints = CalculateMaxSoulPoints(GeneralLevel, 0.2);
 
-                    Util.NewCombatText(Player, new Color(255, 255, 255), "Level Increased!", true, false, 1.25f, 120, 1.1f);
+                    Util.NewCombatText(Player, new Color(255, 255, 255), "Level Increased!", true, false, 1.25f, 120,
+                        1.1f);
                     Util.DefaultDustEffect(Player.Center, ModContent.DustType<WhiteDust>(), 8f);
                     Util.NewSoundFX(SoundID.Item4, 0.3f, Player.Center);
                 }
@@ -314,20 +313,22 @@ namespace DMode
                     SoulPoints -= MaxSoulPoints;
                     MaxSoulPoints = CalculateMaxSoulPoints(GeneralLevel, 0.1);
 
-                    Util.NewCombatText(Player, new Color(255, 255, 255), "Level Increased!", true, false, 1.25f, 120, 1.1f);
+                    Util.NewCombatText(Player, new Color(255, 255, 255), "Level Increased!", true, false, 1.25f, 120,
+                        1.1f);
                     Util.DefaultDustEffect(Player.Center, ModContent.DustType<WhiteDust>(), 8f);
                     Util.NewSoundFX(SoundID.Item4, 0.3f, Player.Center);
                 }
             }
-            else 
+            else
             {
-                if(SoulPoints >= MaxSoulPoints) 
+                if (SoulPoints >= MaxSoulPoints)
                 {
                     GeneralLevel++;
                     SoulPoints -= MaxSoulPoints;
                     MaxSoulPoints = CalculateMaxSoulPoints(GeneralLevel, 0);
 
-                    Util.NewCombatText(Player, new Color(255, 255, 255), "Level Increased!", true, false, 1.25f, 120, 1.1f);
+                    Util.NewCombatText(Player, new Color(255, 255, 255), "Level Increased!", true, false, 1.25f, 120,
+                        1.1f);
                     Util.DefaultDustEffect(Player.Center, ModContent.DustType<WhiteDust>(), 8f);
                     Util.NewSoundFX(SoundID.Item4, 0.3f, Player.Center);
                 }
@@ -353,7 +354,10 @@ namespace DMode
                     Util.OpenDestinyBox(Player);
                 }
 
-                if (OppenedBoxes == 50) { AmberKeyEffect = false; }
+                if (OppenedBoxes == 50)
+                {
+                    AmberKeyEffect = false;
+                }
             }
             else if (!AmberKeyEffect)
             {
@@ -362,7 +366,10 @@ namespace DMode
             }
 
             //DMode Buff
-            if (Player.active) { Player.AddBuff(Mod.Find<ModBuff>("DMode").Type, 15); }
+            if (Player.active)
+            {
+                Player.AddBuff(Mod.Find<ModBuff>("DMode").Type, 15);
+            }
         }
 
         public override void UpdateBadLifeRegen()
@@ -371,7 +378,7 @@ namespace DMode
             if (DeathsGrasp)
             {
                 double dot = (Player.statLife * 0.05 + 2) * 2;
-                Player.lifeRegen -= (int)dot; 
+                Player.lifeRegen -= (int)dot;
             }
 
             //Broken Bones's Bleeding damage:
@@ -404,19 +411,19 @@ namespace DMode
             //Head:
             if (Util.CanHaveAnySystem(armor_head))
             {
-                Skill.EarnExp(armor_head);
+                Skill.EarnExp(armor_head, damage);
             }
 
             //Body:
             if (Util.CanHaveAnySystem(armor_body))
             {
-                Skill.EarnExp(armor_body);
+                Skill.EarnExp(armor_body, damage);
             }
 
             //Legs:
             if (Util.CanHaveAnySystem(armor_legs))
             {
-                Skill.EarnExp(armor_legs);
+                Skill.EarnExp(armor_legs, damage);
             }
         }
 
@@ -434,8 +441,9 @@ namespace DMode
                 damage = (int)(damage * 0.75);
             }
         }
-        
-        public override void ModifyHitNPCWithProj(Projectile proj, NPC target, ref int damage, ref float knockback, ref bool crit, ref int hitDirection)
+
+        public override void ModifyHitNPCWithProj(Projectile proj, NPC target, ref int damage, ref float knockback,
+            ref bool crit, ref int hitDirection)
         {
             //Pain Damage Reduction:
             if (Player.HasBuff(Mod.Find<ModBuff>("Pain").Type))
@@ -453,18 +461,28 @@ namespace DMode
             if (Util.CanHaveLevel(target))
             {
                 double generalLevelFactor = 1 - (0.005 * GeneralLevel);
-                if (generalLevelFactor < 0.32) { generalLevelFactor = 0.32; }
+                if (generalLevelFactor < 0.32)
+                {
+                    generalLevelFactor = 0.32;
+                }
 
                 double maxYieldperAttack = 2.5 + 3 * Math.Log(1 + GeneralLevel);
-                if (maxYieldperAttack > 100) { maxYieldperAttack = 100; }
+                if (maxYieldperAttack > 100)
+                {
+                    maxYieldperAttack = 100;
+                }
 
-                double minYieldperAttack = maxYieldperAttack * 0.25; 
+                double minYieldperAttack = maxYieldperAttack * 0.25;
 
                 double critFactor = 0.5;
-                if (crit) { generalLevelFactor *= critFactor; }
+                if (crit)
+                {
+                    generalLevelFactor *= critFactor;
+                }
 
                 double expYield = 0;
-                if (damage * generalLevelFactor >= minYieldperAttack && damage * generalLevelFactor <= maxYieldperAttack)
+                if (damage * generalLevelFactor >= minYieldperAttack &&
+                    damage * generalLevelFactor <= maxYieldperAttack)
                 {
                     expYield = damage * generalLevelFactor;
                 }
@@ -478,7 +496,6 @@ namespace DMode
                 //Non-Expert Mode:
                 if (!Main.expertMode)
                 {
-
                     //Melee:
                     if (item.DamageType == DamageClass.Melee)
                     {
@@ -560,9 +577,13 @@ namespace DMode
                             {
                                 strengthExp = 0;
                                 Strength += 1;
-                                strengthMaxExp = (int)(80 * (10 + crystal_upgrades - Strength) * (1 + 0.075 * Strength));
+                                strengthMaxExp =
+                                    (int)(80 * (10 + crystal_upgrades - Strength) * (1 + 0.075 * Strength));
                             }
-                            else { strengthExp = strengthMaxExp - 1; }
+                            else
+                            {
+                                strengthExp = strengthMaxExp - 1;
+                            }
                         }
                     }
 
@@ -578,7 +599,10 @@ namespace DMode
                                 Mind += 1;
                                 mindMaxExp = (int)(80 * (10 + crystal_upgrades - Mind) * (1 + 0.075 * Mind));
                             }
-                            else { mindExp = mindMaxExp - 1; }
+                            else
+                            {
+                                mindExp = mindMaxExp - 1;
+                            }
                         }
                     }
 
@@ -592,9 +616,13 @@ namespace DMode
                             {
                                 dexterityExp = 0;
                                 Dexterity += 1;
-                                dexterityMaxExp = (int)(80 * (10 + crystal_upgrades - Dexterity) * (1 + 0.075 * Dexterity));
+                                dexterityMaxExp =
+                                    (int)(80 * (10 + crystal_upgrades - Dexterity) * (1 + 0.075 * Dexterity));
                             }
-                            else { dexterityExp = dexterityMaxExp - 1; }
+                            else
+                            {
+                                dexterityExp = dexterityMaxExp - 1;
+                            }
                         }
                     }
 
@@ -610,7 +638,10 @@ namespace DMode
                                 Spirit += 1;
                                 spiritMaxExp = (int)(80 * (10 + crystal_upgrades - Spirit) * (1 + 0.075 * Spirit));
                             }
-                            else { spiritExp = spiritMaxExp - 1; }
+                            else
+                            {
+                                spiritExp = spiritMaxExp - 1;
+                            }
                         }
                     }
 
@@ -624,9 +655,13 @@ namespace DMode
                             {
                                 strengthExp = 0;
                                 Strength += 1;
-                                strengthMaxExp = (int)(80 * (10 + crystal_upgrades - Strength) * (1 + 0.075 * Strength));
+                                strengthMaxExp =
+                                    (int)(80 * (10 + crystal_upgrades - Strength) * (1 + 0.075 * Strength));
                             }
-                            else { strengthExp = strengthMaxExp - 1; }
+                            else
+                            {
+                                strengthExp = strengthMaxExp - 1;
+                            }
                         }
 
                         dexterityExp += (int)(expYield) / 2;
@@ -636,15 +671,19 @@ namespace DMode
                             {
                                 dexterityExp = 0;
                                 Dexterity += 1;
-                                dexterityMaxExp = (int)(80 * (10 + crystal_upgrades - Dexterity) * (1 + 0.075 * Dexterity));
+                                dexterityMaxExp =
+                                    (int)(80 * (10 + crystal_upgrades - Dexterity) * (1 + 0.075 * Dexterity));
                             }
-                            else { dexterityExp = dexterityMaxExp - 1; }
+                            else
+                            {
+                                dexterityExp = dexterityMaxExp - 1;
+                            }
                         }
                     }
                 }
             }
         }
-        
+
         public override void OnHitNPCWithProj(Projectile proj, NPC target, int damage, float knockback, bool crit)
         {
             //Style
@@ -656,18 +695,31 @@ namespace DMode
                 double generalLevelFactor = 1 - (0.0075 * GeneralLevel);
 
                 double maxYieldperAttack = 2.5 + 3 * Math.Log(1 + GeneralLevel);
-                if (maxYieldperAttack > 100) { maxYieldperAttack = 100; }
+                if (maxYieldperAttack > 100)
+                {
+                    maxYieldperAttack = 100;
+                }
 
                 double minYieldperAttack = maxYieldperAttack * 0.25;
 
-                if (crit) { generalLevelFactor *= 0.5; }
+                if (crit)
+                {
+                    generalLevelFactor *= 0.5;
+                }
 
-                if (proj.penetrate > 1 && proj.penetrate != 0) { generalLevelFactor *= (1 / proj.penetrate); }
+                if (proj.penetrate > 1 && proj.penetrate != 0)
+                {
+                    generalLevelFactor *= (1 / proj.penetrate);
+                }
 
-                if (generalLevelFactor < 0.25) { generalLevelFactor = 0.25; }
+                if (generalLevelFactor < 0.25)
+                {
+                    generalLevelFactor = 0.25;
+                }
 
                 double expYield = 0;
-                if (damage * generalLevelFactor >= minYieldperAttack && damage * generalLevelFactor <= maxYieldperAttack)
+                if (damage * generalLevelFactor >= minYieldperAttack &&
+                    damage * generalLevelFactor <= maxYieldperAttack)
                 {
                     expYield = damage * generalLevelFactor;
                 }
@@ -725,7 +777,8 @@ namespace DMode
                         {
                             spiritExp = 0;
                             Spirit += 1;
-                            spiritMaxExp = (int)(80 * (10 + crystal_upgrades - Spirit) * (1 + 0.075 * Spirit)); ;
+                            spiritMaxExp = (int)(80 * (10 + crystal_upgrades - Spirit) * (1 + 0.075 * Spirit));
+                            ;
                         }
                     }
 
@@ -762,9 +815,13 @@ namespace DMode
                             {
                                 strengthExp = 0;
                                 Strength += 1;
-                                strengthMaxExp = (int)(80 * (10 + crystal_upgrades - Strength) * (1 + 0.075 * Strength));
+                                strengthMaxExp =
+                                    (int)(80 * (10 + crystal_upgrades - Strength) * (1 + 0.075 * Strength));
                             }
-                            else if (crystal_upgrades >= maxCrystalUpgrades) { strengthExp = strengthMaxExp - 1; }
+                            else if (crystal_upgrades >= maxCrystalUpgrades)
+                            {
+                                strengthExp = strengthMaxExp - 1;
+                            }
                         }
                     }
 
@@ -780,7 +837,10 @@ namespace DMode
                                 Mind += 1;
                                 mindMaxExp = (int)(80 * (10 + crystal_upgrades - Mind) * (1 + 0.075 * Mind));
                             }
-                            else if (crystal_upgrades >= maxCrystalUpgrades) { mindExp = mindMaxExp - 1; }
+                            else if (crystal_upgrades >= maxCrystalUpgrades)
+                            {
+                                mindExp = mindMaxExp - 1;
+                            }
                         }
                     }
 
@@ -794,9 +854,13 @@ namespace DMode
                             {
                                 dexterityExp = 0;
                                 Dexterity += 1;
-                                dexterityMaxExp = (int)(80 * (10 + crystal_upgrades - Dexterity) * (1 + 0.075 * Dexterity));
+                                dexterityMaxExp =
+                                    (int)(80 * (10 + crystal_upgrades - Dexterity) * (1 + 0.075 * Dexterity));
                             }
-                            else if (crystal_upgrades >= maxCrystalUpgrades) { dexterityExp = dexterityMaxExp - 1; }
+                            else if (crystal_upgrades >= maxCrystalUpgrades)
+                            {
+                                dexterityExp = dexterityMaxExp - 1;
+                            }
                         }
                     }
 
@@ -810,9 +874,13 @@ namespace DMode
                             {
                                 spiritExp = 0;
                                 Spirit += 1;
-                                spiritMaxExp = (int)(80 * (10 + crystal_upgrades - Spirit) * (1 + 0.075 * Spirit)); ;
+                                spiritMaxExp = (int)(80 * (10 + crystal_upgrades - Spirit) * (1 + 0.075 * Spirit));
+                                ;
                             }
-                            else if (crystal_upgrades >= maxCrystalUpgrades) { spiritExp = spiritMaxExp - 1; }
+                            else if (crystal_upgrades >= maxCrystalUpgrades)
+                            {
+                                spiritExp = spiritMaxExp - 1;
+                            }
                         }
                     }
 
@@ -826,9 +894,13 @@ namespace DMode
                             {
                                 strengthExp = 0;
                                 Strength += 1;
-                                strengthMaxExp = (int)(80 * (10 + crystal_upgrades - Strength) * (1 + 0.075 * Strength));
+                                strengthMaxExp =
+                                    (int)(80 * (10 + crystal_upgrades - Strength) * (1 + 0.075 * Strength));
                             }
-                            else if (crystal_upgrades >= maxCrystalUpgrades) { strengthExp = strengthMaxExp - 1; }
+                            else if (crystal_upgrades >= maxCrystalUpgrades)
+                            {
+                                strengthExp = strengthMaxExp - 1;
+                            }
                         }
 
                         dexterityExp += (int)(expYield * 0.5);
@@ -838,14 +910,17 @@ namespace DMode
                             {
                                 dexterityExp = 0;
                                 Dexterity += 1;
-                                dexterityMaxExp = (int)(80 * (10 + crystal_upgrades - Dexterity) * (1 + 0.075 * Dexterity));
+                                dexterityMaxExp =
+                                    (int)(80 * (10 + crystal_upgrades - Dexterity) * (1 + 0.075 * Dexterity));
                             }
-                            else if (crystal_upgrades >= maxCrystalUpgrades) { dexterityExp = dexterityMaxExp - 1; }
+                            else if (crystal_upgrades >= maxCrystalUpgrades)
+                            {
+                                dexterityExp = dexterityMaxExp - 1;
+                            }
                         }
                     }
                 }
             }
-        } 
-        
+        }
     }
 }
