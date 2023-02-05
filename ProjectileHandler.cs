@@ -20,8 +20,6 @@ namespace DMode
 
             var itemInHand = player.inventory[player.selectedItem];
             Skill.EarnExp(itemInHand, damage);
-
-            Util.NewCombatText(player, new Color(88, 188, 35), $"{projectile.owner}", false, false, 1.25f, 90);
             base.OnHitNPC(projectile, target, damage, knockback, crit);
         }
     }
