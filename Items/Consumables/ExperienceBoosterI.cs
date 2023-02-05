@@ -37,7 +37,7 @@ namespace DMode.Items.Consumables
 
         public override void RightClick(Player player)
         {
-            Skill.EarnMultipleExp(player.inventory[0], 100);
+            Skill.EarnExp(player.inventory[0], 100);
         }
 
         public override void AddRecipes()

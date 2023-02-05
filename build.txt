@@ -1,8 +1,8 @@
 author = Doctor Moonbad 
-version = 0.721
+version = 0.722
 displayName = D-MODE
 homepage = https://discord.gg/yTZ6fRd
 hideCode = true
 hideResources = true
 includeSource = false
-buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, .idea\*

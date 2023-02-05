@@ -5,21 +5,21 @@ using Terraria.ID;
 
 namespace DMode.Items.Consumables
 {
-	public class DestinyBox : ModItem
-	{
+    public class DestinyBox : ModItem
+    {
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Destiny Box");
         }
 
         public override void SetDefaults()
-		{
-			Item.maxStack = 1000;
-			Item.consumable = true;
-			Item.width = 32;
-			Item.height = 28;
-			Item.rare = ItemRarityID.Blue;
-		}
+        {
+            Item.maxStack = 1000;
+            Item.consumable = true;
+            Item.width = 32;
+            Item.height = 28;
+            Item.rare = ItemRarityID.Blue;
+        }
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
@@ -28,8 +28,11 @@ namespace DMode.Items.Consumables
         }
 
         public override void RightClick(Player player)
-		{
-            Util.OpenDestinyBox(player);
+        {
+            var stackSize = this.Item.stack;
+            for (int i = 0; i < stackSize; i++)
+                Util.OpenDestinyBox(player);
+            this.Item.stack = 0;
         }
 
         public override bool CanRightClick()
