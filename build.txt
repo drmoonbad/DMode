@@ -1,5 +1,5 @@
-author = Doctor Moonbad 
-version = 0.722
+author = Doctor Moonbad, Longu Codes 
+version = 0.723
 displayName = D-MODE
 homepage = https://discord.gg/yTZ6fRd
 hideCode = true
