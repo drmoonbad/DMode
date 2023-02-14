@@ -1,11 +1,11 @@
-using DMode.Items.Materials;
-using Microsoft.Xna.Framework;
 using System.Collections.Generic;
+using DModeRemastered.Items.Materials;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.Items.Tools
+namespace DModeRemastered.Items.Tools
 {
     public class RingOfConvergence : ModItem
     {

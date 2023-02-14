@@ -1,11 +1,11 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using DModeRemastered.Items.Materials;
+using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using DMode.Items.Materials;
 
-namespace DMode.Items
+namespace DModeRemastered.Items
 {
     public class SpiritPowerCrystal : ModItem
     {

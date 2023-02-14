@@ -1,6 +1,6 @@
 author = Doctor Moonbad, Longu Codes 
 version = 0.723
-displayName = D-MODE
+displayName = D-MODE: Remastered
 homepage = https://discord.gg/yTZ6fRd
 hideCode = true
 hideResources = true

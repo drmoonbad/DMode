@@ -1,12 +1,12 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
-using Terraria.ID;
-using System;
 
-namespace DMode
+namespace DModeRemastered
 {
     [CloneByReference]
     public class Skill : GlobalItem

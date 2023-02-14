@@ -1,11 +1,11 @@
-using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.Items.Tools
+namespace DModeRemastered.Items.Tools
 {
     public class DHeart : ModItem
     {

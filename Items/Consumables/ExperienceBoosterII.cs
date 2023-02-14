@@ -1,9 +1,9 @@
-using Terraria;
-using Terraria.ModLoader;
-using Terraria.ID;
 using System.Collections.Generic;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace DMode.Items.Consumables
+namespace DModeRemastered.Items.Consumables
 {
     public class ExperienceBoosterII : ModItem
     {

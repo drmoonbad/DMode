@@ -1,15 +1,15 @@
 ﻿using System;
-using Terraria;
-using Terraria.ID;
-using Terraria.ModLoader;
+using DModeRemastered.Items.Consumables;
+using DModeRemastered.Items.Materials;
 using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.Audio;
-using DMode.Items.Consumables;
-using DMode.Items.Materials;
 using Terraria.Chat;
+using Terraria.ID;
 using Terraria.Localization;
+using Terraria.ModLoader;
 
-namespace DMode
+namespace DModeRemastered
 {
     public class Util
     {

@@ -3,7 +3,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.Items.Tools
+namespace DModeRemastered.Items.Tools
 {
 	public class UnHeart : ModItem
     {

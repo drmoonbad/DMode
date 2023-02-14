@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.Buffs
+namespace DModeRemastered.Buffs
 {
     public class DeathsGrasp : ModBuff
     {

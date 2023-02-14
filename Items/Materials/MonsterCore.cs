@@ -1,10 +1,9 @@
-using DMode.Items.Materials;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.Items.Materials
+namespace DModeRemastered.Items.Materials
 {
     public class MonsterCore : ModItem
     {

@@ -1,9 +1,7 @@
-﻿
-using System.IO;
-using Terraria.ModLoader;
+﻿using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace DMode
+namespace DModeRemastered
 {
     public class DModeWorld : ModSystem
     {

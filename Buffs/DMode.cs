@@ -2,7 +2,7 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace DMode.Buffs
+namespace DModeRemastered.Buffs
 {
     public class DMode : ModBuff
     {

@@ -1,10 +1,10 @@
-using Terraria.ModLoader;
-using Terraria.ID;
-using Terraria;
 using System.Collections.Generic;
-using DMode.Items.Materials;
+using DModeRemastered.Items.Materials;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace DMode.Items.Accessories
+namespace DModeRemastered.Items.Accessories
 {
     public class MadnessSigil : ModItem
     {

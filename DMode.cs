@@ -1,9 +1,6 @@
-using System.IO;
 using Terraria.ModLoader;
-using Terraria;
-using Terraria.ID;
 
-namespace DMode
+namespace DModeRemastered
 {
 	class DMode : Mod 
 	{

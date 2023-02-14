@@ -1,15 +1,15 @@
+using System;
+using System.Collections.Generic;
+using DModeRemastered.Buffs.Style;
+using DModeRemastered.Dusts;
+using DModeRemastered.Items.Tools;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
-using System;
-using System.Collections.Generic;
-using DMode.Dusts;
-using DMode.Items.Tools;
-using DMode.Buffs.Style;
 
-namespace DMode
+namespace DModeRemastered
 {
     public class DModePlayer : ModPlayer
     {
