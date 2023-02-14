@@ -1,12 +1,6 @@
-<<<<<<< Updated upstream
-author = Doctor Moonbad 
-version = 0.722
-displayName = D-MODE
-=======
 author = Doctor Moonbad, Longu Codes 
 version = 0.723
 displayName = D-MODE: Remastered
->>>>>>> Stashed changes
 homepage = https://discord.gg/yTZ6fRd
 hideCode = true
 hideResources = true

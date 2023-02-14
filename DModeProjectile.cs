@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 namespace DModeRemastered
 {
     [CloneByReference]
-    public class DModeProjectile : GlobalProjectile 
+    public class DModeProjectile : GlobalProjectile
     {
         //Soul Projectile:
         public int SoulOwner = -1;
@@ -20,10 +20,7 @@ namespace DModeRemastered
 
         public override bool InstancePerEntity
         {
-            get
-            {
-                return true;
-            }
+            get { return true; }
         }
         /*public override bool CloneNewInstances
         {
@@ -40,22 +37,27 @@ namespace DModeRemastered
             {
                 SoulOwner = Main.LocalPlayer.whoAmI;
             }
-            
         }
-        
+
         public override void SetDefaults(Projectile projectile)
         {
             sourceInvID = -1;
 
-        /*
-         * When a frendly projectile does not have a damage type when generated, it's will receive a damage type.
-         * The damage type to be set is the same as the item's damage type of the currently item being held by the projectile's owner.
-         * Exception 1: If the determined weapon does not have a damage type, then a random damage type may be set.
-         * Exception 2: If the projectile does not have an active owner or a valid item in hand, a random damage type may be set. 
-         */
+            /*
+             * When a frendly projectile does not have a damage type when generated, it's will receive a damage type.
+             * The damage type to be set is the same as the item's damage type of the currently item being held by the projectile's owner.
+             * Exception 1: If the determined weapon does not have a damage type, then a random damage type may be set.
+             * Exception 2: If the projectile does not have an active owner or a valid item in hand, a random damage type may be set. 
+             */
             bool hasNoDamageType = false;
-            if (projectile.DamageType == null) { hasNoDamageType = true; }
-            else { hasNoDamageType = false; }
+            if (projectile.DamageType == null)
+            {
+                hasNoDamageType = true;
+            }
+            else
+            {
+                hasNoDamageType = false;
+            }
 
             if (hasNoDamageType)
             {
@@ -65,8 +67,14 @@ namespace DModeRemastered
                     Item item = player.HeldItem;
 
                     bool hasNoDamageType2;
-                    if (item.DamageType == null) { hasNoDamageType2 = true; }
-                    else { hasNoDamageType2 = false; }
+                    if (item.DamageType == null)
+                    {
+                        hasNoDamageType2 = true;
+                    }
+                    else
+                    {
+                        hasNoDamageType2 = false;
+                    }
 
                     if (hasNoDamageType2)
                     {
@@ -89,7 +97,6 @@ namespace DModeRemastered
                                 projectile.DamageType = DamageClass.Throwing;
                                 break;
                         }
-
                     }
                     else if (!hasNoDamageType2)
                     {
@@ -121,15 +128,15 @@ namespace DModeRemastered
             }
 
             //Reduced Lifespawn of unowned souls:
-            if (projectile.type == Mod.Find<ModProjectile>("Soul").Type && SoulOwner == -1) 
+            if (projectile.type == Mod.Find<ModProjectile>("Soul").Type && SoulOwner == -1)
             {
                 projectile.timeLeft = projectile.timeLeft / 2;
             }
         }
 
-        private void EarnExp(Player player, NPC target) 
+        private void EarnExp(Player player, NPC target, int dmg)
         {
-            if(sourceInvID < 0) 
+            if (sourceInvID < 0)
             {
                 /*
                 * For the cases where a source weapon inventory position can't be defined,
@@ -137,7 +144,7 @@ namespace DModeRemastered
                 */
                 if (Util.IsCommonWeapon(player.HeldItem) && Util.IsValidSkillSystemTarget(target))
                 {
-                    Skill.EarnExp(player.HeldItem);
+                    Skill.EarnExp(player.HeldItem, dmg);
                 }
             }
             else
@@ -150,7 +157,7 @@ namespace DModeRemastered
                 Item item = player.inventory[sourceInvID];
                 if (Util.IsValidSkillSystemTarget(target))
                 {
-                    Skill.EarnExp(item);
+                    Skill.EarnExp(item, dmg);
                 }
             }
         }
@@ -163,7 +170,7 @@ namespace DModeRemastered
 
                 if (!player.HeldItem.IsAir && !projectile.npcProj)
                 {
-                    EarnExp(player, target);  
+                    EarnExp(player, target, damage);
                 }
             }
         }
