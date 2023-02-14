@@ -1,10 +1,10 @@
 using System;
-using Terraria;
-using Terraria.ModLoader;
-using Terraria.ID;
 using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace DMode.Projectiles
+namespace DModeRemastered.Projectiles
 {
 	public class Soul : ModProjectile
 	{

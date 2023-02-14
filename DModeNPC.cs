@@ -1,13 +1,13 @@
+using System;
+using DModeRemastered.Items.Consumables;
+using DModeRemastered.Items.Materials;
+using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
-using System;
-using DMode.Items.Consumables;
-using Terraria.DataStructures;
-using DMode.Items.Materials;
 
-namespace DMode
+namespace DModeRemastered
 {
     [CloneByReference]
     public class DModeNPC : GlobalNPC

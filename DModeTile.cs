@@ -1,11 +1,9 @@
-﻿using System;
-using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 using Terraria;
 
-namespace DMode
+namespace DModeRemastered
 {
-    public class DModeTile : GlobalTile
+    public class DModeTile: GlobalTile
     {
         public override void KillTile(int i, int j, int type, ref bool fail, ref bool effectOnly, ref bool noItem)
         {

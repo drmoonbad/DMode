@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace DMode
+namespace DModeRemastered
 {
     [CloneByReference]
     public class Quality : GlobalItem

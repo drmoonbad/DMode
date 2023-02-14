@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace DMode.Dusts
+namespace DModeRemastered.Dusts
 {
 	public class ArcaneDust : ModDust
 	{

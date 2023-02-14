@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
-using DMode.Items.Materials;
+using DModeRemastered.Items.Materials;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.Items.Consumables
+namespace DModeRemastered.Items.Consumables
 {
     public class DaedalusHammer : ModItem
     {

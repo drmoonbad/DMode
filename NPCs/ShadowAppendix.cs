@@ -1,11 +1,11 @@
-﻿using DMode.Items.Materials;
+﻿using System;
+using DModeRemastered.Items.Materials;
 using Microsoft.Xna.Framework;
-using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.NPCs
+namespace DModeRemastered.NPCs
 {
     public class ShadowAppendix : ModNPC
     {
