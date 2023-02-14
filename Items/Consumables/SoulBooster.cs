@@ -1,11 +1,11 @@
-using DMode.Items.Materials;
+using DModeRemastered.Items.Materials;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.Items.Consumables
+namespace DModeRemastered.Items.Consumables
 {
     public class SoulBooster : ModItem
     {

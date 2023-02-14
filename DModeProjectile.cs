@@ -1,11 +1,7 @@
-﻿using Microsoft.Xna.Framework;
-using System;
-using Terraria;
-using Terraria.DataStructures;
-using Terraria.ID;
+﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace DMode
+namespace DModeRemastered
 {
     [CloneByReference]
     public class DModeProjectile : GlobalProjectile 

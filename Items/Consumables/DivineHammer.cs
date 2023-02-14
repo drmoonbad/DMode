@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DMode.Items.Consumables
+namespace DModeRemastered.Items.Consumables
 {
 	public class DivineHammer : ModItem
 	{

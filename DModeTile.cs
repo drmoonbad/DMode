@@ -1,7 +1,12 @@
+<<<<<<< Updated upstream
 ﻿using Terraria.ModLoader;
 using Terraria;
+=======
+﻿using Terraria;
+using Terraria.ModLoader;
+>>>>>>> Stashed changes
 
-namespace DMode
+namespace DModeRemastered
 {
     public class DModeTile: GlobalTile
     {

@@ -1,8 +1,7 @@
-using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace DMode.Projectiles
+namespace DModeRemastered.Projectiles
 {
 	public class PhantomStrike : ModProjectile
 	{

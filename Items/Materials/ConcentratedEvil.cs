@@ -1,7 +1,7 @@
-using Terraria.ModLoader;
 using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace DMode.Items.Materials
+namespace DModeRemastered.Items.Materials
 {
     public class ConcentratedEvil : ModItem
     {

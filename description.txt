@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+This mod is now maintained by LonguCodes after approval from the original author, Doctor Moonbad. Let there be dragons!
+
+>>>>>>> Stashed changes
 D-Mode is a single player mod that inserts a bunch of new RPG elements into Terraria:
 - A Skill System for tools, weapons and armor.
 - An Upgrade System for tools, weapons and armor.
@@ -12,3 +17,5 @@ incompatibilities.
 
 To join, just use the link: https://discord.gg/yTZ6fRd
 Or click on the mod's page down below.
+
+You can also check out the forum post (outdated, current information on discord) here https://forums.terraria.org/index.php?threads/d-mode-a-lightweight-rpg-mod.82289/

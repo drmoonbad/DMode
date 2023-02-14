@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace DMode.Buffs.Style
+namespace DModeRemastered.Buffs.Style
 {
     public class StyleC : ModBuff
     {

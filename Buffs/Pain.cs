@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace DMode.Buffs
+namespace DModeRemastered.Buffs
 {
     public class Pain : ModBuff
     {
